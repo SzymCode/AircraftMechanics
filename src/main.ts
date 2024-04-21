@@ -18,7 +18,6 @@ app.component('Image', Image).component('Menubar', Menubar)
 /**
  *  App uses & mount
  */
-
 import PrimeVue from 'primevue/config'
 
 app.use(PrimeVue).mount('#app')

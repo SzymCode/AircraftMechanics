@@ -7,7 +7,9 @@
     opacity: 0;
     transition: opacity 0.5s ease;
 }
+
 .welcome-image img {
+    position: fixed;
     margin-top: -50px;
     width: 300px;
 }
