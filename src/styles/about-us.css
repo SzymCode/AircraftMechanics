@@ -39,7 +39,7 @@
 
 #about-us h2 {
     font-family: Inter, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.1rem;
     word-wrap: break-word;
 }
@@ -65,5 +65,8 @@
         display: flex;
         justify-content: center;
         gap: 60px;
+    }
+    #about-us h2 {
+        max-width: 610px;
     }
 }

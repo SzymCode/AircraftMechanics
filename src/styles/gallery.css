@@ -16,3 +16,56 @@
     max-height: 270px !important;
     cursor: zoom-in;
 }
+
+.gallery-dialog {
+    position: relative;
+    top: -80px;
+    margin: 0 10px;
+    box-shadow: none;
+    overflow-x: hidden;
+}
+.gallery-dialog .p-dialog-header {
+    position: relative;
+    top: 80px;
+    background: transparent;
+}
+.gallery-dialog .p-dialog-header-icon {
+    color: black;
+    background: white;
+}
+.gallery-dialog .p-dialog-content {
+    padding: 10px 10px 8px 10px;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+.gallery-dialog img {
+    width: 100%;
+    max-height: 600px;
+}
+
+.p-carousel-items-content {
+    border-radius: 5px;
+}
+
+.p-carousel-indicators {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.p-carousel-indicator {
+    margin: 3px;
+}
+
+@media (min-width: 600px) {
+    .gallery-dialog img {
+        max-height: 700px;
+    }
+    .p-carousel-indicators {
+        max-width: 400px;
+    }
+}
+@media (min-width: 992px) {
+    .gallery-dialog img {
+        max-height: 720px;
+    }
+}

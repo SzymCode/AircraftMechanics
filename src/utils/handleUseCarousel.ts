@@ -3,7 +3,7 @@ import { CarouselInterface } from '../types'
 
 export default function useCarousel(): CarouselInterface {
     const indices: number[] = Array.from(
-        { length: 13 },
+        { length: 15 },
         (_, index: number) => index
     )
     const windowWidth: Ref<UnwrapRef<number>> = ref(window.innerWidth)

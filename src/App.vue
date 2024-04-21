@@ -12,6 +12,7 @@ import { handleOpacity } from './utils'
 
 handleOpacity('.welcome-image', '1', 500)
 handleOpacity('.welcome-image', '0', 2200)
+handleOpacity('.welcome-container', '0', 2700)
 
 handleOpacity('.navbar', '1', 3000)
 handleOpacity('#about-us', '1', 3500)
