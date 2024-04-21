@@ -7,7 +7,7 @@
                     <h5>Trzymamy rękę na pulsie</h5>
                 </div>
                 <div>
-                    <h1>Rybaczek Aircraft Mechanics</h1>
+                    <h1>RYBACZEK AIRCRAFT MECHANICS</h1>
                     <h2>
                         Zespół doświadczonych mechaników lotniczych
                         specjalizujących się w obsłudze, naprawie i konserwacji

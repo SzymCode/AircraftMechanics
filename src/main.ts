@@ -10,10 +10,13 @@ export const app = createApp(App)
 /**
  *  PrimeVue components
  */
+import Carousel from 'primevue/carousel'
 import Image from 'primevue/image'
 import Menubar from 'primevue/menubar'
 
-app.component('Image', Image).component('Menubar', Menubar)
+app.component('Carousel', Carousel)
+    .component('Image', Image)
+    .component('Menubar', Menubar)
 
 /**
  *  App uses & mount

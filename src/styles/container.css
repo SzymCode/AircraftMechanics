@@ -2,10 +2,29 @@
 .footer-container {
     width: 100%;
 }
-.container {
+.container,
+.gallery-container,
+.footer-container {
     margin: 0 auto;
+}
+.container {
     max-width: 1100px;
 }
 .footer-container {
     max-width: 950px;
+}
+.gallery-container {
+    max-width: 295px;
+}
+
+@media (min-width: 600px) {
+    .gallery-container {
+        max-width: 495px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .gallery-container {
+        max-width: 695px;
+    }
 }
