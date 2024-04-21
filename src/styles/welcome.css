@@ -1,0 +1,25 @@
+.welcome-image {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.welcome-image img {
+    margin-top: -50px;
+    width: 300px;
+}
+
+@media (min-width: 321px) {
+    .welcome-image img {
+        width: 370px;
+    }
+}
+
+@media (min-width: 600px) {
+    .welcome-image img {
+        width: 500px;
+    }
+}

@@ -1,5 +1,6 @@
+<!--suppress HtmlUnknownAnchorTarget -->
 <template>
-    <nav>
+    <nav class="navbar">
         <Menubar class="container">
             <template #start>
                 <a href="/" title="Rybaczek Aircraft Mechanics">
