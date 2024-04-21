@@ -1,0 +1,94 @@
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1);
+}
+
+footer .container,
+.footer-brand-info,
+.footer-brand {
+    display: flex;
+}
+footer .container {
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.footer-brand-info {
+    flex-direction: column;
+    text-align: end;
+}
+.footer-brand {
+    gap: 10px;
+}
+.footer-brand-logo {
+    position: relative;
+    top: 2px;
+}
+
+.footer-social-media a,
+.footer-made-by,
+.footer-author-name,
+.footer-brand-name,
+.footer-brand-phone-number,
+.footer-brand-email {
+    color: var(--gray-600);
+    text-decoration: none;
+    transition: color 300ms;
+    min-width: max-content;
+}
+
+.footer-made-by,
+.footer-author-name {
+    font-size: 0.6rem;
+}
+.footer-author-name:hover {
+    color: var(--primary-color);
+}
+.footer-brand-name {
+    font-size: 1.15rem;
+}
+
+.footer-brand-phone-number,
+.footer-brand-email {
+    font-size: 0.9rem;
+}
+.footer-brand-phone-number {
+    margin: 4px 0;
+}
+
+.footer-brand-phone-number,
+.footer-brand-email {
+    cursor: pointer;
+}
+
+.footer-made-by-author-name {
+    margin-top: 120px;
+    margin-left: -50px;
+}
+
+.footer-social-media {
+    margin-top: 8px;
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+}
+
+.footer-social-media .pi-facebook:hover {
+    color: #3b5998;
+}
+.footer-social-media .pi-linkedin:hover {
+    color: #0e76a8;
+}
+
+@media (min-width: 600px) {
+    .footer-brand-info {
+        padding-top: 20px;
+    }
+}
