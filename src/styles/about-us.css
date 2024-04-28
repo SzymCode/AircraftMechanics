@@ -3,8 +3,7 @@
     transition: opacity 0.5s ease;
 }
 #about-us .container {
-    margin-top: -150px;
-    padding: 300px 30px 0 30px;
+    padding: 150px 30px 0 30px;
     display: flex;
     justify-content: center;
     margin-bottom: 150px;
@@ -58,15 +57,20 @@
         width: min-content;
     }
     #about-us .container {
-        margin-top: -200px;
-        padding-top: 400px;
+        padding-top: 250px;
     }
     .about-us-container {
         display: flex;
         justify-content: center;
-        gap: 60px;
+        gap: 40px;
     }
     #about-us h2 {
         max-width: 610px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-us-container {
+        gap: 60px;
     }
 }

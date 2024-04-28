@@ -1,11 +1,14 @@
 <template>
     <div class="gallery-container">
         <h3 class="gallery-header">Certyfikaty</h3>
-        <Carousel :value="indices" :numVisible="numVisible">
+        <Carousel
+            :value="indices"
+            :numVisible="numVisible"
+            :autoplayInterval="4000"
+        >
             <template #item="{ index }">
                 <Image
                     :src="`/certificates/image${index}.png`"
-                    width="200"
                     @click="handleImageClick(index)"
                 />
             </template>

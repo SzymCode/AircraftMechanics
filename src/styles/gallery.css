@@ -13,8 +13,13 @@
 
 .gallery-container img {
     height: 100%;
-    max-height: 270px !important;
+    max-height: 270px;
     cursor: zoom-in;
+}
+
+.p-carousel-item {
+    display: flex;
+    justify-content: center;
 }
 
 .gallery-dialog {
