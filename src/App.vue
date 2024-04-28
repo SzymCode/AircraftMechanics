@@ -7,8 +7,8 @@
 </template>
 
 <script setup lang="ts">
-import { Welcome, Navbar, AboutUs, Gallery, Footer } from './components'
-import { handleOpacity } from './utils'
+import { Welcome, Navbar, AboutUs, Gallery, Footer } from '@/components'
+import { handleOpacity } from '@/utils'
 
 handleOpacity('.welcome-image', '1', 500)
 handleOpacity('.welcome-image', '0', 2200)

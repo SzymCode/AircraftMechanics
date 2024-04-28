@@ -27,7 +27,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-import { useCarousel } from '../utils'
+import { useCarousel } from '@/utils'
 
 const visible = ref(false)
 const clickedImageIndex = ref<number | null>(null)

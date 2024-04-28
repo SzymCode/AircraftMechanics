@@ -1,5 +1,6 @@
 import { ref, Ref, UnwrapRef } from 'vue'
-import { CarouselInterface } from '../types'
+
+import { CarouselInterface } from '@/types'
 
 export default function useCarousel(): CarouselInterface {
     const indices: number[] = Array.from(

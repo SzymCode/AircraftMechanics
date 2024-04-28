@@ -60,5 +60,5 @@
 </template>
 
 <script setup lang="ts">
-import { handleCopy } from '../utils'
+import { handleCopy } from '@/utils'
 </script>
