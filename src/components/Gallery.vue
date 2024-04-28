@@ -8,7 +8,8 @@
         >
             <template #item="{ index }">
                 <Image
-                    :src="`/certificates/image${index}.png`"
+                    :src="`/certificates/certificate-${index}.png`"
+                    :alt="`certyfikat-${index}`"
                     @click="handleImageClick(index)"
                 />
             </template>
@@ -17,7 +18,8 @@
     <Dialog class="gallery-dialog" v-model:visible="visible" modal>
         <Image
             v-if="clickedImageIndex !== null"
-            :src="`/certificates/image${clickedImageIndex}.png`"
+            :alt="`certyfikat-${clickedImageIndex}`"
+            :src="`/certificates/certificate-${clickedImageIndex}.png`"
         />
     </Dialog>
 </template>
