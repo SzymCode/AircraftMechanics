@@ -26,6 +26,4 @@ app.component('Carousel', Carousel)
 import PrimeVue from 'primevue/config'
 import VueRouter from '@/router'
 
-app.use(VueRouter)
-    .use(PrimeVue)
-    .mount('#app')
+app.use(VueRouter).use(PrimeVue).mount('#app')

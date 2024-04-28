@@ -1,13 +1,14 @@
 <template>
     <Welcome />
-    <Navbar />
-    <AboutUs />
-    <Gallery />
-    <Footer />
+    <MyNavbar :language="language" />
+    <AboutUs :language="language" />
+    <Gallery :language="language" />
+    <MyFooter :language="language" />
 </template>
 
 <script setup lang="ts">
-import { Welcome, Navbar, AboutUs, Gallery, Footer } from '@/components'
+import { Welcome, MyNavbar, AboutUs, Gallery, MyFooter } from '@/components'
+import { language } from '@/constants'
 import { handleOpacity } from '@/utils'
 
 handleOpacity('.welcome-image', '1', 500)

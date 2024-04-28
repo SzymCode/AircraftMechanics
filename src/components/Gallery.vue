@@ -1,6 +1,8 @@
 <template>
     <div class="gallery-container">
-        <h3 class="gallery-header">Certyfikaty</h3>
+        <h3 class="gallery-header">
+            {{ language === 'en' ? 'Certificates' : 'Certyfikaty' }}
+        </h3>
         <Carousel
             :value="indices"
             :numVisible="numVisible"
@@ -9,7 +11,11 @@
             <template #item="{ index }">
                 <Image
                     :src="`/certificates/certificate-${index}.png`"
-                    :alt="`certyfikat-${index}`"
+                    :alt="
+                        language === 'en'
+                            ? `certificate-${index}`
+                            : `certyfikat-${index}`
+                    "
                     @click="handleImageClick(index)"
                 />
             </template>
@@ -18,7 +24,11 @@
     <Dialog class="gallery-dialog" v-model:visible="visible" modal>
         <Image
             v-if="clickedImageIndex !== null"
-            :alt="`certyfikat-${clickedImageIndex}`"
+            :alt="
+                language === 'en'
+                    ? `certificate-${clickedImageIndex}`
+                    : `certyfikat-${clickedImageIndex}`
+            "
             :src="`/certificates/certificate-${clickedImageIndex}.png`"
         />
     </Dialog>
@@ -31,6 +41,10 @@ import { useCarousel } from '@/utils'
 
 const visible = ref(false)
 const clickedImageIndex = ref<number | null>(null)
+
+defineProps<{
+    language: string
+}>()
 
 const { indices, numVisible, resizeHandler } = useCarousel()
 

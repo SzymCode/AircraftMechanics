@@ -6,12 +6,15 @@
                     <Image
                         class="footer-brand-logo"
                         src="/favicon.ico"
+                        alt="logo"
                         width="20"
                     />
                     <a
                         class="footer-brand-name"
                         href="https://www.facebook.com/mateuszrybaczek007"
-                        title="Nazwa firmy"
+                        :title="
+                            language === 'en' ? 'Brand name' : 'Nazwa firmy'
+                        "
                     >
                         Rybaczek Aircraft Mechanics
                     </a>
@@ -20,14 +23,14 @@
                 <p
                     @click="handleCopy('phone')"
                     class="footer-brand-phone-number"
-                    title="Skopiuj numer"
+                    :title="language === 'en' ? 'Copy' : 'Kopiuj'"
                 >
                     +48 721 067 213
                 </p>
                 <a
                     @click="handleCopy('email')"
                     class="footer-brand-email"
-                    title="Skopiuj maila"
+                    :title="language === 'en' ? 'Copy' : 'Kopiuj'"
                 >
                     mateuszrybaczek@gmail.com
                 </a>
@@ -50,7 +53,9 @@
                 <a
                     class="footer-author-name"
                     href="https://github.com/SzymCode"
-                    title="Autor strony"
+                    :title="
+                        language === 'en' ? 'Website author' : 'Autor strony'
+                    "
                 >
                     SzymCode
                 </a>
@@ -61,4 +66,8 @@
 
 <script setup lang="ts">
 import { handleCopy } from '@/utils'
+
+defineProps<{
+    language: string
+}>()
 </script>
