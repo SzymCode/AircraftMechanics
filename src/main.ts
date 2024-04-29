@@ -10,12 +10,14 @@ export const app = createApp(App)
 /**
  *  PrimeVue components
  */
+import Button from 'primevue/button'
 import Carousel from 'primevue/carousel'
 import Dialog from 'primevue/dialog'
 import Image from 'primevue/image'
 import Menubar from 'primevue/menubar'
 
-app.component('Carousel', Carousel)
+app.component('Button', Button)
+    .component('Carousel', Carousel)
     .component('Dialog', Dialog)
     .component('Image', Image)
     .component('Menubar', Menubar)

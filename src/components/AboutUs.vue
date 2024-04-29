@@ -14,7 +14,7 @@
                 </div>
                 <div>
                     <h1>RYBACZEK AIRCRAFT MECHANICS</h1>
-                    <h2>
+                    <h2 class="about-us-description">
                         {{
                             language === 'en'
                                 ? 'A team of experienced aircraft mechanics specializing in the operation, repair and maintenance of aircraft and aircraft engines. We provide comprehensive failure diagnostics, ensuring the highest flight safety standards. Our services include aircraft servicing and access to the latest technologies in the field of avionics and propulsion systems. We are committed to ensuring the efficiency and safety of every flight.'

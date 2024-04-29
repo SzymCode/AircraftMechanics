@@ -71,6 +71,7 @@ footer .container {
 .footer-made-by-author-name {
     margin-top: 120px;
     margin-left: -50px;
+    min-width: max-content;
 }
 
 .footer-social-media {

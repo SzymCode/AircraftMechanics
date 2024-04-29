@@ -3,11 +3,19 @@
     <MyNavbar :language="language" />
     <AboutUs :language="language" />
     <Gallery :language="language" />
+    <ContactUs :language="language" />
     <MyFooter :language="language" />
 </template>
 
 <script setup lang="ts">
-import { Welcome, MyNavbar, AboutUs, Gallery, MyFooter } from '@/components'
+import {
+    Welcome,
+    MyNavbar,
+    AboutUs,
+    Gallery,
+    ContactUs,
+    MyFooter,
+} from '@/components'
 import { language } from '@/constants'
 import { handleOpacity } from '@/utils'
 
@@ -18,5 +26,6 @@ handleOpacity('.welcome-container', '0', 2700)
 handleOpacity('.navbar', '1', 3000)
 handleOpacity('#about-us', '1', 3500)
 handleOpacity('.gallery-container', '1', 4000)
-handleOpacity('.footer', '1', 4500)
+handleOpacity('#contact-us', '1', 4500)
+handleOpacity('.footer', '1', 5000)
 </script>

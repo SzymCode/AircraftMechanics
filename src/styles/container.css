@@ -4,7 +4,8 @@
 }
 .container,
 .gallery-container,
-.footer-container {
+.footer-container,
+.contact-us-container {
     margin: 0 auto;
 }
 .container {
@@ -16,7 +17,11 @@
 .gallery-container {
     max-width: 295px;
 }
-
+.contact-us-container {
+    max-width: 600px;
+    text-align: center;
+    padding: 0 15px;
+}
 @media (min-width: 600px) {
     .gallery-container {
         max-width: 495px;

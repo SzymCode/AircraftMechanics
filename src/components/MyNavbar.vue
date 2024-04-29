@@ -14,8 +14,8 @@
             <template #end>
                 <div class="nav-right-side">
                     <div class="sections">
-                        <router-link
-                            to="#about-us"
+                        <a
+                            href="#about-us"
                             :title="
                                 language == 'en'
                                     ? 'Go to section'
@@ -24,9 +24,9 @@
                             class="section-link"
                         >
                             {{ language === 'en' ? 'About' : 'O nas' }}
-                        </router-link>
-                        <router-link
-                            to="#contact-us"
+                        </a>
+                        <a
+                            href="#contact-us"
                             :title="
                                 language == 'en'
                                     ? 'Go to section'
@@ -35,7 +35,7 @@
                             class="section-link"
                         >
                             {{ language === 'en' ? 'Contact' : 'Kontakt' }}
-                        </router-link>
+                        </a>
                     </div>
                     <div class="languages">
                         <a href="/" class="language">

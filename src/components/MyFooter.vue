@@ -20,6 +20,13 @@
                     </a>
                 </div>
 
+                <a
+                    @click="handleCopy('email')"
+                    class="footer-brand-email"
+                    :title="language === 'en' ? 'Copy' : 'Kopiuj'"
+                >
+                    rybaczekaircraftmechanicsltd@gmail.com
+                </a>
                 <p
                     @click="handleCopy('phone')"
                     class="footer-brand-phone-number"
@@ -27,13 +34,7 @@
                 >
                     +48 721 067 213
                 </p>
-                <a
-                    @click="handleCopy('email')"
-                    class="footer-brand-email"
-                    :title="language === 'en' ? 'Copy' : 'Kopiuj'"
-                >
-                    mateuszrybaczek@gmail.com
-                </a>
+
                 <div class="footer-social-media">
                     <a
                         class="pi pi-facebook"
